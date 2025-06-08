@@ -10,8 +10,8 @@ Just drag the selected text onto the textarea. Then hit **Copy** to grab it to y
 
 ## 📦 Features
 
-* Clean, classless styling with [Sakura.css](https://oxal.org/sakura/)
-* Big central `<textarea>` with placeholder text
+* Clean, classless styling with [Sakura.css](https://github.com/oxalorg/sakura) 
+* Big central `<textarea>`
 * Two simple buttons: **Copy** and **Clear**
 * Works offline once loaded
 
