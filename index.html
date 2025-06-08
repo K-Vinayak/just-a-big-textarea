@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just a big &lt;textarea&gt;</title>
+  <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+  <style>
+    textarea {
+      width: 100%;
+      height: 300px;
+      font-size: 1.1em;
+    }
+    .buttons {
+      display: flex;
+      gap: 1em;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Just a big &lt;textarea&gt;</h1>
+  <textarea id="big-text" placeholder="Drop your text here or paste something..."></textarea>
+  <div class="buttons">
+    <button onclick="copyText()">Copy</button>
+    <button onclick="clearText()">Clear</button>
+  </div>
+  <p>
+    Did you find a website where Ctrl+C won't copy the text but it lets you drag the selected text? Just drag and drop it into the textarea above and copy it!
+  </p>
+
+  <script>
+    function copyText() {
+      const textarea = document.getElementById("big-text");
+      if(textarea.value == "") return;
+      textarea.select();
+      document.execCommand("copy");
+    }
+
+    function clearText() {
+      document.getElementById("big-text").value = "";
+    }
+  </script>
+</body>
+</html>
