@@ -38,3 +38,8 @@ MIT — free to use, modify, and share.
 ---
 
 Made with 💻 and 🤖 for those tricky copy-paste moments.
+
+<details>
+  <summary></summary>
+  Drag ond drop into notepad works too 🤫
+</details>
